@@ -1,0 +1,14 @@
+.background{
+    background-color:aqua;
+    height:200px;
+    width:300px; 
+    
+}
+
+.background:hover p{
+   display: block;
+}
+
+.background:hover h1{
+    display: ;
+}

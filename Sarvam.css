@@ -1,0 +1,287 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar-image{
+  height:40px;
+  animation:movedown 1s linear 1;
+  animation-delay:2s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+
+}
+@keyframes movedown{
+  0%{
+    transform:translateY(-100px);
+    visibility:visible;
+  }
+  100%{
+    transform:translateY(0);
+    visibility:visible;
+  }
+}
+
+.navtext{
+  animation:movedown 1s linear 1;
+  animation-delay:3s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+.navbar-button{
+   
+    width:100px;
+    border-radius:16px;
+    animation:movedown 1s linear 1;
+  animation-delay:4s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+
+
+#navbar-image:hover {
+    cursor: pointer;
+  }
+
+
+.nav-link:hover{
+    color:blue!important;
+}
+
+.row-1-image{
+  width:100%;
+  animation:moveleft 1s linear 1;
+  animation-delay:4s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+  0%{
+    transform:translateX(-100px);
+    visibility:visible;
+  }
+  100%{
+    transform:translateX(0);
+    visibility:visible;
+  }
+}
+
+.row-1-text{
+  animation:moveright 1s linear 1;
+  animation-delay:4s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+@keyframes moveright{
+  0%{
+    transform:translateX(-100px);
+    visibility:visible;
+  }
+  100%{
+    transform:translateX(0);
+    visibility:visible;
+  }
+}
+
+.under-row1{
+  animation:movetop 1s linear 1;
+  animation-delay:4s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movetop{
+  0%{
+    transform:translateX(-100px);
+    visibility:visible;
+  }
+  100%{
+    transform:translateX(0);
+    visibility:visible;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.animation-row2-image{
+  height:300px;
+  animation:moveright 1s linear 1;
+  animation-delay:4s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveright{
+  0%{
+    transform:translateX(-100px);
+    visibility:visible;
+  }
+  100%{
+    transform:translateX(0);
+    visibility:visible;
+  }
+}
+
+.animation-row2-text{
+  animation:moveleft 1s linear 1;
+  animation-delay:5s;
+  visibility:hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveleft{
+  0%{
+    transform:translateX(-100px);
+    visibility:visible;
+  }
+  100%{
+    transform:translateX(0);
+    visibility:visible;
+  }
+}
+
+.join-discord-button{
+    border-radius:16px;
+    border-color:blue;
+    border-style:solid;
+    background-color:white;
+    text-align:center;
+    font-size:16px;
+    color:blue;
+    padding:6px;
+    height:45px;
+    width:180px;
+}
+
+/* horizontal line */
+h2 {
+  width: 100%; 
+  text-align:center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+h2 span { 
+  background:#fff; 
+  padding:0 10px; 
+}
+/* horizontal line */
+
+
+  .icon-container {
+    background-color:blue;
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+
+  }
+  .icon {
+    color:white;
+   
+    
+  }
+
+  .box{
+    width:300px;
+    height:250px;
+    background-color:#fff;
+    border-radius:5px;
+    
+    padding:10px;
+    margin:10px;
+   
+    letter-spacing:1px;
+    box-shadow:0 3px 5px rgba(0,0,0,.3);
+    overflow:hidden;
+    position:relative;
+    z-index:0;
+}
+
+.box::before{
+  width:100%;
+  height:100%;
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.box::after{
+  width:100%;
+  height:100%;
+  background-color:#0093e9;
+ 
+   background-image:linear-gradient(45deg, #0093E9 0%, #80D0c7 100%); 
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-2;
+  clip-path:circle(20% at 90% 10%);
+  transtion:.2s;
+}
+
+.box:hover::after{
+  clip-path: circle(100%);
+
+}
+
+.box:hover ul{
+  color:#fff;
+}
+.box:hover .icon-container{
+  background-color:white;
+}
+
+.box:hover .icon{
+  color:blue;
+}
+
+
+/* .row{
+  animation: transitionIn 0.75s;
+}
+
+h1{
+  animation: transitionIn 0.75s;
+}
+h2{
+  animation: transitionIn 0.75s;
+}
+p{
+  animation: transitionIn 0.75s;
+}
+
+nav{
+  animation: transitionIn 0.75s;
+} */
+
+/* @keyframes transitionIn{ 
+  from{
+    opacity:0;
+     transform: rotateX(-10deg); 
+    transform: translateY(-10px);
+  }
+  to{
+    opacity:1;
+     transform: rotateX(0); 
+    transform: translateY(-10px);
+  }
+} */
